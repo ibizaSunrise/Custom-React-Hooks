@@ -32,7 +32,7 @@ export default function useHover(ref) {
         return function () {
             node.removeEventListener('mouseenter', on);
             node.removeEventListener('mousemove', on);
-            node.removeEventListener('mouselive', off);
+            node.removeEventListener('mouseleave', off);
         }
     }, [])
 
